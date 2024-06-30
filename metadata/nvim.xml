@@ -2,8 +2,10 @@
 <Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../Metadata.xsd">
     <FriendlyName>Nvim</FriendlyName>
 
+    <BasePath>/.config/nvim</BasePath>
+
     <Detection>
-        <Method>FindInPath</Method>
+	<Method>FindInPath</Method>
 	<Availability>AlwaysInstall</Availability>
     </Detection>
 

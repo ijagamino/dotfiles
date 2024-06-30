@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../Metadata.xsd">
+    <FriendlyName>Nvim</FriendlyName>
+
+    <Detection>
+        <Method>FindInPath</Method>
+	<Availability>AlwaysInstall</Availability>
+    </Detection>
+
+    <InstallPath>
+        <SpecialFolder>LocalApplicationData</SpecialFolder>
+        <Destination>nvim</Destination>
+    </InstallPath>
+</Component>

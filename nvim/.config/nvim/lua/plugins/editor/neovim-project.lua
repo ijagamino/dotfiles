@@ -12,7 +12,7 @@ return {
 	opts = {
 		projects = {
 			-- Files in telescope are listed in order below
-			"~/AppData/Local/nvim",
+			"~/dotfiles/*/.config/*",
 			"~/OneDrive/Udemy/*/*",
 			"~/OneDrive/University/*year*/*/*/*",
 			"~/Projects/*",

@@ -13,9 +13,10 @@ return {
 		projects = {
 			-- Files in telescope are listed in order below
 			"~/dotfiles/*/.config/*",
-			"~/OneDrive/Udemy/*/*",
 			"~/OneDrive/University/*year*/*/*/*",
+			"~/Documents/*/*",
 			"~/Projects/*",
+			"~/OneDrive/Udemy/*/*",
 			"C:/laragon/www/*",
 		},
 	},

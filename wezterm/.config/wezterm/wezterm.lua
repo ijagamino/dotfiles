@@ -7,6 +7,12 @@ local config = wezterm.config_builder()
 local act = wezterm.action
 
 -- This is where you actually apply your config choices
+-- Conditional based on OS
+-- Uses powershell on windows
+if wezterm.target_triple == "x86_64-pc-windows-msvc" then
+	config.default_prog = { "powershell.exe" }
+end
+
 -- Wezterm window configuration
 config.window_decorations = "RESIZE"
 config.enable_tab_bar = false

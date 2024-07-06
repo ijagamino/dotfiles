@@ -3,7 +3,9 @@
     <FriendlyName>Wezterm</FriendlyName>
 
     <Detection>
-        <Method>FindInPath</Method>
-	<Availability>AlwaysInstall</Availability>
+        <!-- <Method>FindInPath</Method> -->
+	<!-- <Availability>AlwaysInstall</Availability> -->
+        <Method>Static</Method>
+	<Availability>NeverInstall</Availability>
     </Detection>
 </Component>

@@ -5,12 +5,15 @@
     <BasePath>./.config/alacritty</BasePath>
 
     <Detection>
-	<Method>FindInPath</Method>
-	<FindInPath>alacritty</FindInPath>
+	<!-- <Method>FindInPath</Method> -->
+	<!-- <FindInPath>alacritty</FindInPath> -->
+	<!-- <Availability>AlwaysInstall</Availability> -->
+	<Method>Static</Method>
+	<Availability>NeverInstall</Availability>
     </Detection>
 
     <InstallPath>
-	    <SpecialFolder>ApplicationData</SpecialFolder>
-	    <Destination>./alacritty</Destination>
+	<SpecialFolder>ApplicationData</SpecialFolder>
+	<Destination>./alacritty</Destination>
     </InstallPath>
 </Component>

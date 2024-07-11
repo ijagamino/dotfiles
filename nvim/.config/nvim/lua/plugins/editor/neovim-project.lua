@@ -12,11 +12,15 @@ return {
 	opts = {
 		projects = {
 			-- Files in telescope are listed in order below
+			"~/work/*",
+			"~/school/*/*",
+			"~/personal/*",
+			"~/udemy/*/*",
+			"~/OneDrive/work/*",
+			"~/OneDrive/school/*/*",
+			"~/OneDrive/personal/*",
+			"~/OneDrive/udemy/*/*",
 			"~/dotfiles/*/.config/*",
-			"~/OneDrive/University/*year*/*/*/*",
-			"~/Documents/*/*",
-			"~/Projects/*",
-			"~/OneDrive/Udemy/*/*",
 			"C:/laragon/www/*",
 		},
 	},

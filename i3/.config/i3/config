@@ -9,10 +9,13 @@
 # layout, use the i3-config-wizard
 
 # Changing colors
+# Catppuccin colors
+# purple = #cba6f7
+# orange = #fab387
 # Class                 border  backgr. text    indicator child border
-client.focused          #cba6f7 #285577 #cdd6f4 #2e9ef4   #cba6f7
+client.focused          #cba6f7 #285577 #cdd6f4 #2e9ef4   #fab387
 client.focused_inactive #333333 #5f676a #cdd6f4 #484e50   #5f676a
-client.unfocused        #181825 #222222 #888888 #292d2e   #181825
+client.unfocused        #181825 #222222 #888888 #292d2e   #cba6f7
 client.urgent           #2f343a #f38ba8 #cdd6f4 #f38ba8   #f38ba8
 client.placeholder      #000000 #0c0c0c #cdd6f4 #000000   #0c0c0c
 
@@ -24,7 +27,7 @@ gaps inner 32
 assign [class="Alacritty"] → number 3
 
 for_window [class=".*"] title_format ""
-for_window [class=".*"] border none
+for_window [class=".*"] border pixel 4
 
 # Set background
 exec_always feh --bg-scale ~/.config/backgrounds/turtle-bg.jpg

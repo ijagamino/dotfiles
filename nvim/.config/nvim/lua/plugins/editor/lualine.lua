@@ -6,12 +6,10 @@ return {
 	-- See `:help lualine.txt`
 	config = function()
 		local lualine = require("lualine")
-		-- local noice = require("noice")
 
 		lualine.setup({
 			options = {
 				icons_enabled = true,
-				-- globalstatus = true,
 			},
 			sections = {
 				lualine_a = {
@@ -25,7 +23,7 @@ return {
 				lualine_b = { "branch", "diff", "diagnostics" },
 				lualine_c = { "filename" },
 				lualine_x = { "filetype" },
-				lualine_y = {},
+				lualine_y = { "grapple" },
 				lualine_z = {},
 			},
 			inactive_sections = {

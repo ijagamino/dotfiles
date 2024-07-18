@@ -27,7 +27,7 @@ gaps inner 32
 assign [class="Alacritty"] → number 3
 
 for_window [class=".*"] title_format ""
-for_window [class=".*"] border pixel 4
+for_window [class=".*"] border none
 
 # Set background
 exec_always feh --bg-scale ~/.config/backgrounds/turtle-bg.jpg

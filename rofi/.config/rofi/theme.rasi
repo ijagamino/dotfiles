@@ -1,0 +1,16 @@
+* {
+    foreground: #cdd6f4;
+    selected-foreground: #f5e0dc;
+
+    background: #1e1e2e80;
+    background-solid: #1e1e2e;
+
+    primary: #cba6f7;
+
+    selected-border: #cba6f7;
+
+    unselected-background: #00000000;
+    unselected-border: #b4befe;
+}
+
+/* vim:ft=css

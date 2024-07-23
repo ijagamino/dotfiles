@@ -16,6 +16,7 @@ source /usr/share/doc/fzf/examples/completion.zsh
 
 # Set alias
 alias py="python3"
+alias battery="upower -i $(upower -e | grep BAT) | grep --color=never -E 'state|to\ full|to\ empty|percentage'"
 
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
 HISTSIZE=1000

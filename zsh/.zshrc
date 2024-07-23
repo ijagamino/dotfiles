@@ -1,6 +1,6 @@
 # Set up the prompt
 
-fpath=(/home/ivan/.config/zsh-prompt/ $fpath)
+fpath=(~/.config/zsh-prompt/ $fpath)
 autoload -Uz prompt_purification_setup; prompt_purification_setup
 # autoload -Uz promptinit
 # promptinit

@@ -9,7 +9,7 @@ return {
 	config = function()
 		local tailwind_sorter = require("tailwind-sorter")
 		tailwind_sorter.setup({
-			on_save_enabled = true, -- If `true`, automatically enables on save sorting.
+			on_save_enabled = false, -- If `true`, automatically enables on save sorting.
 		})
 	end,
 }

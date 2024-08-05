@@ -13,4 +13,10 @@ return {
 			filetype = "blade",
 		}
 	end,
+
+	vim.filetype.add({
+		pattern = {
+			[".*%.blade%.php"] = "blade",
+		},
+	}),
 }

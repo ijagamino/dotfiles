@@ -132,6 +132,7 @@ return {
 			pyright = {},
 			tailwindcss = {},
 			tsserver = {},
+			volar = {},
 			lua_ls = {
 				Lua = {
 					workspace = { checkThirdParty = false },

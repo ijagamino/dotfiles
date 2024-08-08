@@ -24,6 +24,7 @@ return {
 				php = { "pint" },
 				blade = { "blade-formatter" },
 				python = { "isort", "black" },
+				vue = { { "prettierd", "prettier" } },
 				-- ["*"] = { "codespell" },
 				["_"] = { "codespell", "trim_whitespace" },
 			},

@@ -18,6 +18,7 @@ return {
 			-- blade = { "tlint" },
 			-- html = { "markuplint" },
 			css = { "stylelint", "codespell" },
+			vue = { "eslint_d", "codespell" },
 			text = { "vale", "codespell" },
 		}
 

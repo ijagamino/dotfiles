@@ -6,6 +6,8 @@ autoload -Uz prompt_purification_setup; prompt_purification_setup
 # promptinit
 # prompt adam1
 
+export PATH=$PATH:~/.config/composer/vendor/bin
+
 setopt histignorealldups sharehistory
 
 # Use emacs keybindings even if our EDITOR is set to vi

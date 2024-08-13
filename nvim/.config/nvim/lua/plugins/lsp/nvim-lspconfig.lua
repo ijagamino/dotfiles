@@ -78,7 +78,11 @@ return {
 
 		-- mason-lspconfig requires that these setup functions are called in this order
 		-- before setting up the servers.
-		mason.setup()
+		mason.setup({
+			ui = {
+				border = "rounded",
+			},
+		})
 		mason_lspconfig.setup()
 
 		-- Enable the following language servers

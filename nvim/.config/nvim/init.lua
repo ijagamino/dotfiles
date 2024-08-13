@@ -17,12 +17,18 @@ vim.opt.rtp:prepend(lazypath)
 require("config")
 require("remap")
 require("lazy").setup({
-	{ import = "plugins.editor" },
-	{ import = "plugins.lsp" },
-	{ import = "plugins.lint" },
-	{ import = "plugins.dap" },
-	{ import = "plugins.formatting" },
-	{ import = "plugins.html" },
-	{ import = "plugins.laravel" },
-	{ import = "plugins.markdown" },
+	spec = {
+		{ import = "plugins.editor" },
+		{ import = "plugins.lsp" },
+		{ import = "plugins.lint" },
+		{ import = "plugins.dap" },
+		{ import = "plugins.formatting" },
+		{ import = "plugins.html" },
+		{ import = "plugins.laravel" },
+		{ import = "plugins.markdown" },
+	},
+	install = { colorscheme = { "catppuccin" } },
+	ui = {
+		border = "rounded",
+	},
 })

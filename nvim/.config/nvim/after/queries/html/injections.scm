@@ -3,7 +3,7 @@
 ; AlpineJS attributes
 (attribute
   (attribute_name) @_attr
-    (#lua-match? @_attr "^x%-%l")
+    (#match? @_attr "^[@]|^x-[a-z]")
   (quoted_attribute_value
     (attribute_value) @injection.content)
   (#set! injection.language "javascript"))

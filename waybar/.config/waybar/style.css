@@ -52,7 +52,7 @@
 @define-color crustAlpha rgba(17, 17, 27, 0.8);
 
 * {
-  font-family: "JetBrainsMono Nerd Font";
+  font-family: "JetBrainsMono", "Font Awesome 6 Free";
   font-size: 18px;
   color: @text;
 }

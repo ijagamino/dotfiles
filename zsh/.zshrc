@@ -19,6 +19,7 @@ source /usr/share/fzf/completion.zsh
 # Set alias
 alias py="python3"
 alias yeet="sudo pacman -Rns"
+alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
 
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
 HISTSIZE=1000

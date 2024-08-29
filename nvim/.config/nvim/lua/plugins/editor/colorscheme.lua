@@ -70,6 +70,8 @@ return {
 
 		-- setup must be called before loading
 		vim.cmd.colorscheme("catppuccin")
-		vim.api.nvim_set_hl(0, "LineNr", { fg = "#ced7f2" })
+		vim.api.nvim_set_hl(0, "LineNrAbove", { fg = "#f5e0dc" })
+		vim.api.nvim_set_hl(0, "LineNr", { fg = "#fab387" })
+		vim.api.nvim_set_hl(0, "LineNrBelow", { fg = "#f5e0dc" })
 	end,
 }

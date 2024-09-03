@@ -17,6 +17,8 @@ source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
 
 # Set alias
+alias ls="ls --color=auto"
+alias grep="grep --color=auto"
 alias py="python3"
 alias yeet="sudo pacman -Rns"
 alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'

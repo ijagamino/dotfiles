@@ -18,8 +18,8 @@ require("config")
 require("remap")
 require("lazy").setup({
 	spec = {
+		{ import = "plugins.core" },
 		{ import = "plugins.editor" },
-		{ import = "plugins.lsp" },
 		{ import = "plugins.lint" },
 		{ import = "plugins.dap" },
 		{ import = "plugins.formatting" },

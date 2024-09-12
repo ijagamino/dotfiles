@@ -5,7 +5,7 @@ return {
 		local which_key = require("which-key")
 
 		which_key.setup({
-			window = {
+			win = {
 				border = "rounded", -- none, single, double, shadow
 				position = "bottom", -- bottom, top
 				margin = { 1, 0, 1, 0 }, -- extra window margin [top, right, bottom, left]. When between 0 and 1, will be treated as a percentage of the screen size.
@@ -19,25 +19,37 @@ return {
 			},
 		})
 		-- document existing key chains
-		which_key.register({
-			["<leader>c"] = { name = "[c]ode", _ = "which_key_ignore" },
-			["<leader>d"] = { name = "[d]ebugging", _ = "which_key_ignore" },
-			["<leader>g"] = { name = "[g]it", _ = "which_key_ignore" },
-			["<leader>h"] = { name = "Git [h]unk", _ = "which_key_ignore" },
-			["<leader>r"] = { name = "[r]ename", _ = "which_key_ignore" },
-			["<leader>s"] = { name = "[s]earch", _ = "which_key_ignore" },
-			["<leader>t"] = { name = "[t]oggle", _ = "which_key_ignore" },
-			["<leader>w"] = { name = "[w]orkspace", _ = "which_key_ignore" },
-			["<leader>n"] = { name = "Swap [n]ext", _ = "which_key_ignore" },
-			["<leader>p"] = { name = "Swap [p]revious", _ = "which_key_ignore" },
-			["<leader>o"] = { name = "[o]pen project", _ = "which_key_ignore" },
-			["<leader>l"] = { name = "[l]SP", _ = "which_key_ignore" },
+		which_key.add({
+			{ "<leader>c", group = "[c]ode" },
+			{ "<leader>c_", hidden = true },
+			{ "<leader>d", group = "[d]ebugging" },
+			{ "<leader>d_", hidden = true },
+			{ "<leader>g", group = "[g]it" },
+			{ "<leader>g_", hidden = true },
+			{ "<leader>h", group = "Git [h]unk" },
+			{ "<leader>h_", hidden = true },
+			{ "<leader>r", group = "[r]ename" },
+			{ "<leader>r_", hidden = true },
+			{ "<leader>s", group = "[s]earch" },
+			{ "<leader>s_", hidden = true },
+			{ "<leader>t", group = "[t]oggle" },
+			{ "<leader>t_", hidden = true },
+			{ "<leader>w", group = "[w]orkspace" },
+			{ "<leader>w_", hidden = true },
+			{ "<leader>n", group = "Swap [n]ext" },
+			{ "<leader>n_", hidden = true },
+			{ "<leader>p", group = "Swap [p]revious" },
+			{ "<leader>p_", hidden = true },
+			{ "<leader>o", group = "[o]pen project" },
+			{ "<leader>o_", hidden = true },
+			{ "<leader>l", group = "[l]SP" },
+			{ "<leader>l_", hidden = true },
 		})
 		-- register which-key VISUAL mode
 		-- required for visual <leader>hs (hunk stage) to work
-		which_key.register({
-			["<leader>"] = { name = "VISUAL <leader>" },
-			["<leader>h"] = { "Git [H]unk" },
-		}, { mode = "v" })
+		which_key.add({
+			{ "<leader>", group = "VISUAL <leader>", mode = "v" },
+			{ "<leader>h", desc = "Git [H]unk", mode = "v" },
+		})
 	end,
 }

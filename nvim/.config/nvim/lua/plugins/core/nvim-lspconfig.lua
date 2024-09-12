@@ -119,18 +119,6 @@ return {
 					"php",
 					"blade",
 				},
-				settings = {
-					intelephense = {
-						filetypes = {
-							"php",
-							"blade",
-						},
-						files = {
-							associations = { "*.php", "*.blade.php" }, -- Associating .blade.php files as well
-							maxSize = 5000000,
-						},
-					},
-				},
 			},
 			marksman = {},
 			pyright = {},
@@ -165,7 +153,11 @@ return {
 
 		mason_lspconfig.setup_handlers({
 			function(server_name)
+				if server_name == "tsserver" then
+					server_name = "ts_ls"
+				end
 				require("lspconfig")[server_name].setup({
+
 					capabilities = capabilities,
 					on_attach = on_attach,
 					settings = servers[server_name],

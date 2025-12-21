@@ -5,8 +5,6 @@ return {
 	lazy = true,
 	event = { "BufReadPre", "BufNewFile" },
 
-	opts = {},
-
 	config = function()
 		local treesitter = require("nvim-treesitter.configs")
 		treesitter.setup({

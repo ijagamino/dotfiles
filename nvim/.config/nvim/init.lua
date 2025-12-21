@@ -20,9 +20,6 @@ require("lazy").setup({
 	spec = {
 		{ import = "plugins.core" },
 		{ import = "plugins.editor" },
-		{ import = "plugins.lint" },
-		{ import = "plugins.dap" },
-		{ import = "plugins.formatting" },
 		{ import = "plugins.html" },
 		{ import = "plugins.laravel" },
 		{ import = "plugins.markdown" },

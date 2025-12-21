@@ -4,7 +4,8 @@ return {
 		"rcarriga/nvim-dap-ui",
 		"nvim-neotest/nvim-nio",
 		"mfussenegger/nvim-dap-python",
-		"jay-babu/mason-nvim-dap.nvim",
+		'mason-org/mason.nvim',
+		'jay-babu/mason-nvim-dap.nvim',
 	},
 
 	config = function()
@@ -47,9 +48,9 @@ return {
 		end
 
 		vim.keymap.set("n", "<F5>", dap.continue, { desc = "Start debug session" })
-		vim.keymap.set("n", "<F10>", dap.step_over, { desc = "Run for one step" })
-		vim.keymap.set("n", "<F11>", dap.step_into, { desc = "Step into function/method" })
-		vim.keymap.set("n", "<F12>", dap.step_out, { desc = "Step out of function/method" })
+		vim.keymap.set("n", "<F1>", dap.step_into, { desc = "Step into function/method" })
+		vim.keymap.set("n", "<F2>", dap.step_over, { desc = "Run for one step" })
+		vim.keymap.set("n", "<F3>", dap.step_out, { desc = "Step out of function/method" })
 		vim.keymap.set("n", "<leader>dt", dap.toggle_breakpoint, { desc = "Debugging [t]oggle breakpoint" })
 		vim.keymap.set({ "n", "v" }, "<leader>dp", widgets.preview, { desc = "Debugging [p]review expression" })
 	end,

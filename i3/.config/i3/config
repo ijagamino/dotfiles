@@ -21,13 +21,9 @@ client.placeholder      #000000 #0c0c0c #cdd6f4 #000000   #0c0c0c
 
 client.background       #ffffff
 
-# Set  gaps (similar to margin)
-gaps outer 32
-gaps inner 32
+# Set gaps (similar to margin)
+gaps inner 16
 gaps bottom 64
-
-# Assign terminal only to workspace 3
-assign [class="Alacritty"] → number 3
 
 for_window [class=".*"] title_format ""
 for_window [class=".*"] border none
@@ -67,6 +63,8 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
+
+exec --no-startup-id setxkbmap -option "ctrl:swapcaps"
 
 # Turn brightness
 bindsym XF86MonBrightnessDown exec brightnessctl --min-val=5 -q s 5%-

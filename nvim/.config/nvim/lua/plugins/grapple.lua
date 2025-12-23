@@ -9,7 +9,7 @@ return {
     status = false,
   },
   keys = {
-    { "<leader>a", "<cmd>Grapple toggle<cr>", desc = "Tag a file" },
+    { "<leader>a", "<cmd>Grapple tag<cr>", desc = "Tag a file" },
     { "<leader>e", "<cmd>Grapple toggle_tags<cr>", desc = "Toggle tags menu" },
 
     { "<leader>1", "<cmd>Grapple select index=1<cr>", desc = "Select first tag" },

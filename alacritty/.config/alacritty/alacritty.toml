@@ -6,23 +6,19 @@ WINIT_X11_SCALE_FACTOR = "1.0"
 
 [window]
 padding = { x = 8, y = 4}
-opacity = 0.8
+# opacity = 0.8
 
 [font]
 size = 14.0
 
 [font.normal]
-family = "JetBrainsMono Nerd Font"
-style = "Regular"
+family = "DepartureMono Nerd Font"
 
 [font.bold]
-family = "JetBrainsMono Nerd Font"
-style = "Bold"
+family = "DepartureMono Nerd Font"
 
 [font.italic]
-family = "JetBrainsMono Nerd Font"
-style = "Italic"
+family = "DepartureMono Nerd Font"
 
 [font.bold_italic]
-family = "JetBrainsMono Nerd Font"
-style = "Bold Italic"
+family = "DepartureMono Nerd Font"

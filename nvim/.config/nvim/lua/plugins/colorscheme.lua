@@ -4,6 +4,11 @@ return {
     lazy = true,
     name = "catppuccin",
     opts = {
+      transparent_background = false,
+      float = {
+        transparent = false,
+        solid = false,
+      },
       no_italic = true,
       lsp_styles = {
         underlines = {

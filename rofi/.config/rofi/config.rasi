@@ -2,8 +2,8 @@
 
 configuration {
     modes: "window,drun,run,ssh";
-    font: "Jetbrains Mono Nerd Font Mono 14";
-    icon-theme: "Reversal-black-dark";
+    font: "DepartureMono Nerd Font Mono 14";
+    icon-theme: "pixelitos-dark";
     show-icons: true;
   timeout {
     action: "kb-cancel";

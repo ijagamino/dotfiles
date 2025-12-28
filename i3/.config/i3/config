@@ -8,43 +8,30 @@
 # To get a config file with the same key positions, but for your current
 # layout, use the i3-config-wizard
 
-# Catppuccin color palette
-set $base #1e1e2e
-set $mantle #181825
-set $crust #11111b
-set $text #cdd6f4
-set $subtext0 #a6adc8
-set $subtext1 #bac2de
-set $surface0 #313244
-set $surface1 #45475a
-set $surface2 #585b70
-set $overlay0 #6c7086
-set $overlay1 #7f849c
-set $overlay2 #9399b2
-set $blue #89b4fa
-set $lavender #b4befe
-set $sapphire #74c7ec
-set $sky #89dceb
-set $teal #94e2d5
-set $green #a6e3a1
-set $yellow #f9e2af
-set $peach #fab387
-set $maroon #eba0ac
-set $red #f38ba8
-set $mauve #cba6f7
-set $pink #f5c2e7
-set $flamingo #f2cdcd
-set $border $overlay0
-set $rosewater #f5e0dc
+# Gruvbox material color palette
+set $bg0 #1d2021
+set $fg0 #d4be98
+set $red #ea6962
+set $green #a9b665
+set $blue #7daea3
+set $yellow #d8a657
+set $purple #d3869b
+set $orange #e78a4e
+set $aqua #89b482
 set $transparent #00000000
 
-# Target                title     bg    text    indicator   border
-client.focused          $lavender $base $text   $rosewater  $lavender
-client.focused_inactive $overlay0 $base $text   $rosewater  $overlay0
-client.unfocused        $overlay0 $base $text   $rosewater  $overlay0
-client.urgent           $peach    $base $peach  $overlay0   $peach
-client.placeholder      $overlay0 $base $text   $overlay0   $overlay0
-client.background       $base
+set $grey0 #7c6f64
+set $grey2 #a89984
+
+set $primary #e78a4e
+
+# Target                title       bg          text      indicator border
+client.focused          $aqua       $bg0        $fg0      $primary    $grey2
+client.focused_inactive $border     $bg0        $fg0      $primary    $grey0
+client.unfocused        $border     $bg0        $fg0      $primary    $grey0
+client.urgent           $purple     $bg0        $purple   $border   $grey0
+client.placeholder      $border     $bg0        $fg0      $border   $grey0
+client.background       $bg0
 
 # Set gaps (similar to margin)
 gaps inner 16
@@ -52,10 +39,14 @@ gaps bottom 64
 
 for_window [class=".*"] title_format " "
 for_window [class=".*"] title_window_icon no
+for_window [class=".*"] border pixel 2
 default_border pixel 2
 
 # Set background
-exec_always feh --bg-scale ~/.config/backgrounds/pixel-nature.png
+exec_always feh --bg-scale ~/.config/backgrounds/pixel-turtle-gruvbox.png
+
+# Set autotiling
+exec_always --no-startup-id autotiling
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -133,6 +124,9 @@ bindsym $mod+d exec "rofi -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+
+# take screenshot using flameshot
+bindsym $mod+p exec "flameshot gui"
 
 # change focus
 bindsym $mod+$left focus left

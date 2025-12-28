@@ -47,9 +47,17 @@ return {
     },
   },
   {
+    "sainnhe/gruvbox-material",
+    config = function()
+      vim.g.gruvbox_material_background = "hard"
+      vim.g.gruvbox_material_enable_bold = 1
+      vim.g.gruvbox_material_better_performance = 1
+    end,
+  },
+  {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "gruvbox-material",
     },
   },
 }

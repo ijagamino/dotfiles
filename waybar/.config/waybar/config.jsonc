@@ -1,32 +1,30 @@
 // -*- mode: jsonc -*-
 {
   "layer": "top", // Waybar at top layer
-  "position": "bottom", // Waybar position (top|bottom|left|right)
+  "position": "top", // Waybar position (top|bottom|left|right)
   "height": 48, // Waybar height (to be removed for auto height)
   // "width": 1280, // Waybar width
   "spacing": 12, // Gaps between modules (4px)
-  "margin-left": 64,
-  "margin-right": 64,
-  "margin-bottom": 16,
+  // "margin-left": 16,
+  // "margin-right": 16,
+  // "margin-top": 16,
   // Choose the order of the modules
   "modules-left": [
     "custom/media",
     "cpu",
     "memory",
-    "temperature",
     "network",
   ],
   "modules-center": [
-    "hyprland/window",
+    "clock",
   ],
   "modules-right": [
     "mpd",
     "backlight",
     "pulseaudio",
-    "battery",
-    "clock",
-    "tray",
-    "custom/power"
+    "battery"
+    // "tray",
+    // "custom/power"
   ],
   // Modules configuration
   // "hyprland/workspaces": {
@@ -36,7 +34,7 @@
   //         "2": "󰈹",
   //         "3": "",
   //         "4": "",
-  //     }
+  //     2
   // },
   "keyboard-state": {
     "numlock": true,
@@ -105,7 +103,7 @@
   "clock": {
     // "timezone": "America/New_York",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format": "{:%I:%M} ",
+    "format": "{:%I:%M}",
     "format-alt": "{:%a, %m-%d-%C} "
   },
   "cpu": {
@@ -208,5 +206,5 @@
       "suspend": "systemctl suspend",
       "hibernate": "systemctl hibernate"
     }
-  }
+  },
 }

@@ -4,7 +4,7 @@
   "position": "top", // Waybar position (top|bottom|left|right)
   "height": 48, // Waybar height (to be removed for auto height)
   // "width": 1280, // Waybar width
-  "spacing": 12, // Gaps between modules (4px)
+  // "spacing": 12, // Gaps between modules (4px)
   // "margin-left": 16,
   // "margin-right": 16,
   // "margin-top": 16,
@@ -16,15 +16,15 @@
     "network",
   ],
   "modules-center": [
-    "clock",
+    "clock"
   ],
   "modules-right": [
     "mpd",
     "backlight",
+    "battery",
     "pulseaudio",
-    "battery"
     // "tray",
-    // "custom/power"
+    "custom/power"
   ],
   // Modules configuration
   // "hyprland/workspaces": {
@@ -51,7 +51,10 @@
   "sway/scratchpad": {
     "format": "{icon} {count}",
     "show-empty": false,
-    "format-icons": ["", ""],
+    "format-icons": [
+      "",
+      ""
+    ],
     "tooltip": true,
     "tooltip-format": "{app}: {title}"
   },
@@ -97,14 +100,12 @@
     }
   },
   "tray": {
-    // "icon-size": 21,
     "spacing": 10
   },
   "clock": {
-    // "timezone": "America/New_York",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<small>{calendar}</small>",
     "format": "{:%I:%M}",
-    "format-alt": "{:%a, %m-%d-%C} "
+    "format-alt": "{:%a, %m-%d-%C}"
   },
   "cpu": {
     "format": "{usage} ",
@@ -119,12 +120,26 @@
     "critical-threshold": 80,
     // "format-critical": "{temperatureC}°C {icon}",
     "format": "{temperatureC}°C {icon}",
-    "format-icons": ["", "", ""]
+    "format-icons": [
+      "",
+      "",
+      ""
+    ]
   },
   "backlight": {
     // "device": "acpi_video1",
     "format": "{percent} {icon} ",
-    "format-icons": ["", "", "", "", "", "", "", "", ""]
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
   },
   "battery": {
     "states": {
@@ -139,7 +154,13 @@
     "format-alt": "{time} {icon}",
     // "format-good": "", // An empty format will hide the module
     // "format-full": "",
-    "format-icons": ["", "", "", "", "" ]
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
   },
   "battery#bat2": {
     "bat": "BAT2"
@@ -179,7 +200,11 @@
       "phone": "",
       "portable": "",
       "car": "",
-      "default": ["", "", " "]
+      "default": [
+        "",
+        "",
+        " "
+      ]
     },
     "on-click": "pavucontrol"
   },
@@ -196,7 +221,7 @@
     // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
   },
   "custom/power": {
-    "format" : "",
+    "format": "",
     "tooltip": false,
     "menu": "on-click",
     "menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
@@ -206,5 +231,5 @@
       "suspend": "systemctl suspend",
       "hibernate": "systemctl hibernate"
     }
-  },
+  }
 }

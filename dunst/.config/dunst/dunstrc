@@ -1,17 +1,22 @@
 [global]
-frame_color = "#89b4fa"
-separator_color= frame
-highlight = "#89b4fa"
+font = "DepartureMono Nerd Font Propo 14"
+padding = 16
+horizontal_padding = 16
+frame_color = "#d4be98"
+frame_width = 2
+separator_color = frame
+highlight = "#d4be98"
+offset = (48, 96)
 
 [urgency_low]
-background = "#1e1e2e"
-foreground = "#cdd6f4"
+background = "#1d2021"
+foreground = "#d4be98"
 
 [urgency_normal]
-background = "#1e1e2e"
-foreground = "#cdd6f4"
+background = "#1d2021"
+foreground = "#d4be98"
 
 [urgency_critical]
-background = "#1e1e2e"
-foreground = "#cdd6f4"
-frame_color = "#fab387"
+background = "#1d2021"
+foreground = "#d4be98"
+frame_color = "#e78a4e"

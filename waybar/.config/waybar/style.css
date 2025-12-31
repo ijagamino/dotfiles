@@ -27,18 +27,14 @@ window#waybar {
   padding: 0 1em;
 }
 
-
-.modules-left > widget:nth-child(odd) label, .modules-right > widget:nth-child(odd) label {
+.modules-left > widget:nth-child(even) label, .modules-right > widget:nth-child(even) label {
   color: @bg0;
   background-color: @fg0;
-  /* margin: 20px 0 0 0; */
 }
 
-/* .modules-left:nth-child(even) { */
-/*   font: @fg0; */
-/* } */
-
 .modules-center label {
+  color: @bg0;
+  background-color: @fg0;
   font-weight: bold;
   font-size: 2em;
 }

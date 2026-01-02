@@ -26,11 +26,11 @@ set $grey2 #a89984
 set $primary #e78a4e
 
 # Target                title       bg          text      indicator border
-client.focused          $aqua       $bg0        $fg0      $fg0      $fg0
-client.focused_inactive $border     $bg0        $fg0      $grey0    $grey0
-client.unfocused        $border     $bg0        $fg0      $fg0      $fg0
-client.urgent           $purple     $bg0        $purple   $border   $fg0
-client.placeholder      $border     $bg0        $fg0      $border   $fg0
+client.focused          $fg0        $bg0        $fg0      $fg0      $fg0
+client.focused_inactive $grey0      $bg0        $grey0    $grey0    $grey0
+client.unfocused        $grey0      $bg0        $grey0    $grey0    $grey0
+client.urgent           $red        $bg0        $red      $red      $red
+client.placeholder      $fg0        $bg0        $fg0      $fg0      $fg0
 client.background       $bg0
 
 # Set gaps (similar to margin)

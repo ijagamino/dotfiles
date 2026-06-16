@@ -1,5 +1,5 @@
 [global]
-font = "DepartureMono Nerd Font Propo 14"
+font = "JetBrainsMono Nerd Font Propo 14"
 padding = 16
 horizontal_padding = 16
 frame_color = "#d4be98"

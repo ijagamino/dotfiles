@@ -2,13 +2,14 @@
 
 configuration {
   modes: "window,drun,run,ssh";
-  font: "DepartureMono Nerd Font Mono 14";
-  icon-theme: "pixelitos-dark";
+  font: "JetBrainsMono Nerd Font Mono 14";
   show-icons: true;
+
   timeout {
     action: "kb-cancel";
     delay: 0;
   }
+
   filebrowser {
     directory: "/usr/share/applications/";
     directories-first: true;
@@ -40,7 +41,7 @@ inputbar {
   background-color: @background;
   border: 2px;
   padding: 0.5em;
-  children: [prompt,textbox-prompt-colon,entry,case-indicator];
+  children: [prompt, textbox-prompt-colon, entry, case-indicator];
 }
 
 entry {
@@ -81,14 +82,16 @@ element-text {
   vertical-align: 0.5;
 }
 
-element.selected.normal, element.selected.active {
+element.selected.normal,
+element.selected.active {
   background-color: @background;
   text-color: @selected-foreground;
   border: 4px;
   border-color: @border-selected;
 }
 
-element.normal.normal, element.alternate.normal {
+element.normal.normal,
+element.alternate.normal {
   background-color: @background;
   border: 2px;
 }

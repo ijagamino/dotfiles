@@ -9,12 +9,17 @@ padding = { x = 8, y = 4}
 
 [font]
 size = 14.0
-# normal = { family = "JetBrainsMono Nerd Font" }
-# bold = { family = "JetBrainsMono Nerd Font"}
-# italic = { family = "JetBrainsMono Nerd Font"}
-# bold_italic = { family = "JetBrainsMono Nerd Font"}
+normal = { family = "JetBrainsMono Nerd Font" }
+bold = { family = "JetBrainsMono Nerd Font"}
+italic = { family = "JetBrainsMono Nerd Font"}
+bold_italic = { family = "JetBrainsMono Nerd Font"}
 
-normal = { family = "DepartureMono Nerd Font" }
-bold = { family = "DepartureMono Nerd Font"}
-italic = { family = "DepartureMono Nerd Font"}
-bold_italic = { family = "DepartureMono Nerd Font"}
+# normal = { family = "DepartureMono Nerd Font" }
+# bold = { family = "DepartureMono Nerd Font"}
+# italic = { family = "DepartureMono Nerd Font"}
+# bold_italic = { family = "DepartureMono Nerd Font"}
+
+[[keyboard.bindings]]
+key = "Return"
+mods = "Shift"
+chars = "\u001B\r"

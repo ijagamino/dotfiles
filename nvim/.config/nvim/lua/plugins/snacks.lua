@@ -6,6 +6,12 @@ return {
     { "<leader>e", false },
     { "<leader>E", false },
     {
+      "<leader>sf",
+      function()
+        Snacks.picker.files()
+      end,
+    },
+    {
       "<C-p>",
       function()
         Snacks.explorer()

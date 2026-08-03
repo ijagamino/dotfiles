@@ -6,3 +6,4 @@ local map = vim.keymap.set
 
 map("n", "<C-u>", "<C-u>zz")
 map("n", "<C-d>", "<C-d>zz")
+map("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")

@@ -3,12 +3,7 @@ return {
 	event = { "BufWritePre" },
 	opts = {
 		-- Define your formatters
-		formatters_by_ft = {
-			lua = { "stylua" },
-			python = { "isort", "black" },
-			javascript = { "prettierd", "prettier", stop_after_first = true },
-		},
-		-- Set default options
+		formatters_by_ft = require("registries.formatter").formatters_by_ft,
 		default_format_opts = {
 			lsp_format = "fallback",
 		},

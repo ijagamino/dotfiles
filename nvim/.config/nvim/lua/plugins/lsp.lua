@@ -1,5 +1,6 @@
 return {
 	"neovim/nvim-lspconfig",
+	lazy = false,
 	config = function()
 		vim.diagnostic.config({ virtual_text = true })
 
@@ -28,6 +29,17 @@ return {
 			filetypes = { "liquid" },
 		})
 
-		vim.lsp.enable("lua_ls", "vtsls", "vuels", "intelephense", "jdtls", "shopify")
+		local servers = {
+			"lua_ls",
+			"vtsls",
+			"vue_ls",
+			"intelephense",
+			"jdtls",
+			"shopify",
+		}
+
+		for _, server in ipairs(servers) do
+			vim.lsp.enable(server)
+		end
 	end,
 }

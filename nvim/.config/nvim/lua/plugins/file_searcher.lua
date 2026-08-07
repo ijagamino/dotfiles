@@ -10,6 +10,7 @@ local maps = {
 	{ keys = "sk", action = "keymaps", desc = "Keymaps" },
 
 	{ keys = "gs", action = "git_status", desc = "Git status" },
+	{ keys = "gf", action = "git_bcommits", desc = "Git file history" },
 	{ keys = "Gd", action = "git_diff", desc = "Git diff" },
 	{ keys = "Gh", action = "git_hunks", desc = "Git hunks" },
 	{ keys = "uc", action = "colorschemes", desc = "Colorschemes" },

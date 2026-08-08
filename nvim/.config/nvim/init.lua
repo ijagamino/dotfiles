@@ -1,0 +1,6 @@
+require("configs")
+require("keymaps")
+require("autocmds")
+require("user_commands")
+require("lsp")
+require("languages")

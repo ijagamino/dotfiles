@@ -1,4 +1,4 @@
-general.import = ["~/.config/alacritty/catppuccin-mocha.toml"]
+general.import = ["~/.config/alacritty/luna.toml"]
 
 [env]
 TERM = "xterm-256color"
@@ -13,11 +13,6 @@ normal = { family = "JetBrainsMono Nerd Font" }
 bold = { family = "JetBrainsMono Nerd Font"}
 italic = { family = "JetBrainsMono Nerd Font"}
 bold_italic = { family = "JetBrainsMono Nerd Font"}
-
-# normal = { family = "DepartureMono Nerd Font" }
-# bold = { family = "DepartureMono Nerd Font"}
-# italic = { family = "DepartureMono Nerd Font"}
-# bold_italic = { family = "DepartureMono Nerd Font"}
 
 [[keyboard.bindings]]
 key = "Return"

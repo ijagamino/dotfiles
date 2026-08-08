@@ -1,33 +1,29 @@
-@define-color bg0 #1d2021;
-@define-color fg0 #d4be98;
-@define-color fg1 #ddc7a1;
-@define-color red #ea6962;
-@define-color green #a9b665;
-@define-color blue #7daea3;
-@define-color yellow #d8a657;
-@define-color orange #e78a4e;
-@define-color aqua #89b482;
-@define-color grey0 #7c6f64;
-@define-color grey1 #928374;
-@define-color grey2 #a89984;
+@define-color bg0 #060606;
+@define-color fg0 #e4e4e8;
 
 * {
-  font-family: "DepartureMono Nerd Font Propo", "JetBrainsMono Nerd Font Propo", "Font Awesome 6 Free";
+  font-family:
+    "DepartureMono Nerd Font Propo", "JetBrainsMono Nerd Font Propo",
+    "Font Awesome 6 Free";
   font-size: 18px;
   color: @fg0;
 }
 
 window#waybar {
   background-color: @bg0;
+  border-bottom: 2px solid @fg0;
   transition-property: background-color;
   transition-duration: 0.5s;
 }
 
-.modules-left label, .modules-center label, .modules-right label {
+.modules-left label,
+.modules-center label,
+.modules-right label {
   padding: 0 1em;
 }
 
-.modules-left > widget:nth-child(even) label, .modules-right > widget:nth-child(even) label {
+.modules-left > widget:nth-child(even) label,
+.modules-right > widget:nth-child(even) label {
   color: @bg0;
   background-color: @fg0;
 }

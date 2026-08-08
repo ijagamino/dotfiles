@@ -9,7 +9,7 @@ function M.setup()
 			kb_options = "ctrl:swapcaps",
 			kb_rules = "",
 
-			-- follow_mouse = 1,
+			follow_mouse = 1,
 
 			sensitivity = 0, -- -1.0 - 1.0, 0 means no modification.
 

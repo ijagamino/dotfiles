@@ -49,6 +49,9 @@ function M.setup()
 		animations = {
 			enabled = true,
 		},
+		cursor = {
+			no_warps = true,
+		},
 	})
 end
 

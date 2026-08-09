@@ -1,10 +1,10 @@
 return {
-	"craftzdog/solarized-osaka.nvim",
+	"WTFox/luna.nvim",
 	lazy = false,
 	priority = 1000,
 	opts = {},
 	config = function(_, opts)
-		require("solarized-osaka").setup(opts)
-		vim.cmd.colorscheme("solarized-osaka")
+		require("luna").setup(opts)
+		vim.cmd.colorscheme("luna")
 	end,
 }

@@ -27,7 +27,7 @@ function M.setup(opts)
 		local end_char = tab.is_active and "] " or ") "
 
 		-- Construct the title with the dynamic wrapping characters
-		local title = start_char .. tab.tab_index + 1 .. end_char .. tab_title(tab)
+		local title = start_char .. tab.tab_index + 1 .. end_char .. tab_title(tab) .. " "
 		title = wezterm.truncate_right(title, max_width)
 
 		return {

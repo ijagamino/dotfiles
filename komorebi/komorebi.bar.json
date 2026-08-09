@@ -1,0 +1,77 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.41/schema.bar.json",
+  "font_family": "JetBrains Mono",
+  "font_size": 18,
+  "theme": {
+    "palette": "Custom",
+    "accent": "Base0D",
+    "colours": {
+      "base_00": "#888888", // Not sure
+      "base_01": "#060606", // Bar backgorund
+      "base_02": "#c7c7c7",
+      "base_03": "#6fbe80",
+      "base_04": "#75a1c7",
+      "base_05": "#c7c7c7",
+      "base_06": "#c4a8d6",
+      "base_07": "#ffffff",
+      "base_08": "#e08585",
+      "base_09": "#d9a35a",
+      "base_0a": "#c2916a",
+      "base_0b": "#6fbe80",
+      "base_0c": "#75a1c7",
+      "base_0d": "#75a1c7",
+      "base_0e": "#c4a8d6",
+      "base_0f": "#8c9cb8"
+    }
+  },
+  "left_widgets": [
+    {
+      "Cpu": {
+        "enable": true
+      }
+    },
+    {
+      "Memory": {
+        "enable": true
+      }
+    },
+    {
+      "Network": {
+        "enable": true,
+        "show_total_activity": false,
+        "show_activity": false
+      }
+    }
+  ],
+  "center_widgets": [
+    {
+      "Date": {
+        "enable": true,
+        "format": "MonthDateYear"
+      }
+    },
+    {
+      "Time": {
+        "enable": true,
+        "format": "TwelveHourWithoutSeconds"
+      }
+    }
+  ],
+  "right_widgets": [
+    {
+      "Update": {
+        "enable": true
+      }
+    },
+    {
+      "Media": {
+        "enable": true
+      }
+    },
+    {
+      "Battery": {
+        "enable": true
+      }
+    }
+  ]
+}

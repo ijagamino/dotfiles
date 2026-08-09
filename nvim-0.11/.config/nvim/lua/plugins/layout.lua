@@ -18,17 +18,16 @@ return {
 			},
 		},
 	},
-	config = function()
+	init = function()
 		vim.opt.laststatus = 3
 		vim.opt.splitkeep = "screen"
 
-		local group = vim.api.nvim_create_augroup("Layout", { clear = true })
 		vim.api.nvim_create_autocmd("VimEnter", {
 			callback = function()
-				-- This opens all pinned views in your edgebars (like Aerial)
-				require("edgy").open()
+				vim.schedule(function()
+					require("edgy").open()
+				end)
 			end,
-			group = group,
 		})
 	end,
 }

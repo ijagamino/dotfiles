@@ -1,5 +1,6 @@
 local maps = {
 	{ keys = "sf", action = "files", desc = "Search Files" },
+	{ keys = "sw", action = "grep_cword", desc = "Search word" },
 	{ keys = "sq", action = "quickfix", desc = "Quickfix" },
 	{ keys = "st", action = "treesitter", desc = "Treesitter" },
 	{ keys = "se", action = "lsp_declarations", desc = "LSP declarations" },

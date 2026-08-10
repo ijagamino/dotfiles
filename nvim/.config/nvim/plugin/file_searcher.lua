@@ -16,6 +16,7 @@ fzf.setup({
 
 local maps = {
 	{ keys = "sf", action = fzf.files, desc = "Search Files" },
+	{ keys = "sw", action = fzf.grep_cword, desc = "Search word" },
 	{ keys = "sq", action = fzf.quickfix, desc = "Quickfix" },
 	{ keys = "st", action = fzf.treesitter, desc = "Treesitter" },
 	{ keys = "se", action = fzf.lsp_declarations, desc = "LSP declarations" },

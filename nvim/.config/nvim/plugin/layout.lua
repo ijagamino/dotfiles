@@ -13,11 +13,7 @@ require("edgy").setup({
 			ft = "aerial",
 			pinned = true,
 			open = function()
-				local main_win = vim.api.nvim_get_current_win()
-
-				vim.cmd("AerialOpen")
-
-				vim.api.nvim_set_current_win(main_win)
+				vim.cmd("AerialOpen!")
 			end,
 		},
 	},

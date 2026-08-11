@@ -38,8 +38,6 @@ autocmd("LspAttach", {
 		map("n", "gi", "<cmd>FzfLua lsp_implementations<CR>", { desc = "Show LSP implementations" }) -- show lsp implementations
 		map("n", "gt", "<cmd>FzfLua lsp_typedefs<CR>", { desc = "Show LSP type definitions" }) -- show lsp type definitions
 		map({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, { desc = "See available code actions" }) -- see available code actions, in visual mode will apply to selection
-		map("n", "<leader>x", "<cmd>FzfLua diagnostics_document<CR>", { desc = "Diagnostics - file" }) -- show  diagnostics for file
-		map("n", "<leader>X", "<cmd>FzfLua diagnostics_workspace<CR>", { desc = "Diagnostics - workspace" }) -- show  diagnostics for file
 		map("n", "<leader>d", vim.diagnostic.open_float, { desc = "Show line diagnostics" }) -- show diagnostics for line
 		map("n", "[d", function()
 			vim.diagnostic.jump({ count = -1, float = true })

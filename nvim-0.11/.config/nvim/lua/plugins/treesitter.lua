@@ -5,5 +5,8 @@ return {
 	build = ":TSUpdate",
 	opts = {
 		auto_install = true,
+		highlight = {
+			enable = true,
+		},
 	},
 }

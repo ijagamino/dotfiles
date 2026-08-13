@@ -3,12 +3,7 @@
 ------------------
 
 -- See https://wiki.hypr.land/Configuring/Basics/Monitors/
-hl.monitor({
-	output = "",
-	mode = "preferred",
-	position = "auto",
-	scale = "auto",
-})
+local monitor = require("config.monitors")
 
 -- Set programs that you use
 local terminal = "alacritty"
@@ -28,7 +23,7 @@ hl.on("hyprland.start", function()
 	--   hl.exec_cmd(terminal)
 	--   hl.exec_cmd("nm-applet")
 	-- hl.exec_cmd("waybar & hyprpaper & firefox")
-	hl.exec_cmd("waybar & hyprpaper")
+	hl.exec_cmd("waybar & hyprpaper & gnome-keyring-daemon --start --components=secrets")
 end)
 
 -------------------------------

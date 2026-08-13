@@ -1,3 +1,6 @@
+# Add ~/.local/bin to path
+export PATH="$HOME/.local/bin:$PATH"
+
 # Default editor to vim
 export EDITOR="vim"
 

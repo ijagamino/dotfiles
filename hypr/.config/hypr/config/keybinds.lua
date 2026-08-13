@@ -14,6 +14,7 @@ function M.setup(opts)
 		main_mod .. " + SHIFT + E",
 		hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'")
 	)
+	hl.bind(main_mod .. " + f", hl.dsp.window.fullscreen({action = "toggle"}))
 	hl.bind(main_mod .. " + e", hl.dsp.exec_cmd(file_manager))
 	hl.bind(main_mod .. " + v", hl.dsp.window.float({ action = "toggle" }))
 	hl.bind(main_mod .. " + d", hl.dsp.exec_cmd(menu))

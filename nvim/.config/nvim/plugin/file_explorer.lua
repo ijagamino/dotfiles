@@ -3,3 +3,7 @@ vim.pack.add({
 })
 
 require("oil").setup({})
+
+vim.keymap.set({ "n" }, "<C-e>", function()
+	vim.cmd("Oil")
+end, { desc = "[Oil] File explorer" })

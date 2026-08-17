@@ -6,9 +6,11 @@ return {
 		{ "nvim-lua/plenary.nvim", lazy = true },
 	},
 	keys = {
-		"<C-e>",
-		"<cmd>Yazi<cr>",
-		desc = "Open yazi at the current file",
+		"<C-p>",
+		function()
+			vim.cmd("Yazi")
+		end,
+		desc = "[Yazi] File manager",
 		mode = { "n", "v" },
 	},
 }

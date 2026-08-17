@@ -5,4 +5,6 @@ vim.pack.add({
 
 require("yazi").setup({})
 
-vim.keymap.set({ "n", "v" }, "<C-e>", "<cmd>Yazi<cr>", { desc = "[Yazi] Open" })
+vim.keymap.set({ "n", "v" }, "<C-p>", function()
+	vim.cmd("Yazi")
+end, { desc = "[Yazi] File manager" })

@@ -1,6 +1,1 @@
-vim.lsp.config("shopify", {
-	cmd = { "shopify", "theme", "language-server" },
-	filetypes = { "liquid" },
-})
-
-vim.lsp.enable("shopify")
+vim.lsp.enable("shopify_theme_ls")

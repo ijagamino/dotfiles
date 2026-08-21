@@ -5,5 +5,5 @@ vim.lsp.enable("vtsls")
 
 for _, ft in ipairs({ "javascript", "typescript", "javascriptreact", "typescriptreact" }) do
 	linter.linters_by_ft[ft] = { "eslint_d" }
-	formatter.formatters_by_ft[ft] = { "prettierd", "prettier" }
+	formatter.formatters_by_ft[ft] = { "prettierd", "prettier", stop_after_first = true }
 end

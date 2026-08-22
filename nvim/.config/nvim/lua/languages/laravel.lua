@@ -1,7 +1,7 @@
 -- Only start LSP on Laravel projects (has "artisan")
 -- vim.lsp.enable("laravel_ls") starts LSP even before checking for root marker ("artisan")
 vim.api.nvim_create_autocmd("FileType", {
-	pattern = "php",
+	pattern = { "php", "blade" },
 	callback = function(args)
 		local root = vim.fs.root(args.buf, "artisan")
 		if not root then

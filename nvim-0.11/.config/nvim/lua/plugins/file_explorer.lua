@@ -27,7 +27,7 @@ return {
 			desc = "[Oil] File explorer",
 		},
 	},
-	config = function()
+	init = function()
 		function Get_oil_winbar()
 			local bufnr = vim.api.nvim_win_get_buf(vim.g.statusline_winid)
 			local dir = require("oil").get_current_dir(bufnr)
